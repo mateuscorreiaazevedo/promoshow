@@ -1,0 +1,91 @@
+{
+  "promotions": [
+    {
+      "id": 1,
+      "title": "Kit Notebook Acer Aspire 3 + Mochila Green, A315-41-R790, AMD Ryzen 3 2200U Dual Core",
+      "price": 1799.99,
+      "url": "",
+      "imageUrl": "https://m.media-amazon.com/images/I/61o0lt6Sh6L._AC_SX679_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Faqueiro Tramontina Laguna Inox - 100 Peças",
+      "price": 246.05,
+      "url": "",
+      "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem/0324bf9ad81ccbc5a8e22a1a41015649.png"
+    },
+    {
+      "title": "Tênis West Coast Marrom",
+      "url": "",
+      "price": 119.99,
+      "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem/fe0a1e4ddcbd8f9a99a05908b6d29ea2.png",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "title": "Fone de Ouvido Jaybird Run XT Sport Bluetooth, Cinza",
+      "price": 699.99,
+      "url": "",
+      "imageUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRFNmi6069JHKZEGCUeyucd3TNwwIErNgxEibLGI27uH0csSAMSlhh09AJ-rCUtQJBUsu5IlyjU45r_w860rRpuWb9Ky4hD"
+    },
+    {
+      "title": "Apple iMac (de 24 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 8‑core, 8 GB RAM, 512 GB) - Prateado",
+      "url": "https://www.amazon.com.br/dp/B09L536KFV/ref=fs_a_atv_1?th=1",
+      "imageUrl": "https://m.media-amazon.com/images/I/613KB2afo6S._AC_SX679_.jpg",
+      "price": 17080.72,
+      "id": 5
+    },
+    {
+      "title": "Notebook Ultrafino Dell XPS-9300-A10S",
+      "url": "https://www.amazon.com.br/Notebook-Ultraport%C3%A1til-Dell-9300-A10S-gera%C3%A7%C3%A3o/dp/B08DKK93FF/?_encoding=UTF8&pd_rd_w=Lr2mF&pf_rd_p=717e1082-1b26-481d-94d5-2a1a46904215&pf_rd_r=SJNGRVC1PXRYKNRHH67A&pd_rd_r=2ee62cd6-6744-496e-a2b8-e5644b6b9da9&pd_rd_wg=5c11f&ref_=pd_gw_ci_mcx_mr_hp_atf_m",
+      "imageUrl": "https://m.media-amazon.com/images/I/61kFDMnnXCL._AC_SX522_.jpg",
+      "price": 8399,
+      "id": 6
+    },
+    {
+      "title": "Fone de ouvido sem fio QCY T13 TWS Bluetooth 5.1 com 4 microfones Touch Control IPX5 à prova d'água 30 horas de tempo de reprodução",
+      "url": "https://www.amazon.com.br/T13-Bluetooth-microfones-Control-reprodu%C3%A7%C3%A3o/dp/B09C1K95LB?ref_=Oct_d_obs_d_23469006011&pd_rd_w=NmkkC&pf_rd_p=574d7dde-c8d1-436d-a7fc-f2654a8c3190&pf_rd_r=CB4ZTMFHMZ32V3EHKS9V&pd_rd_r=ddf126d1-e027-4ef4-98b8-dd2cf06069d7&pd_rd_wg=Cnnaq&pd_rd_i=B09C1K95LB&th=1",
+      "imageUrl": "https://m.media-amazon.com/images/I/61RYWZ7sBzL._AC_SX679_.jpg",
+      "price": 129,
+      "id": 7
+    },
+    {
+      "title": "Console New Nintendo Switch - Azul Neon e Vermelho Neon (versão nacional)",
+      "url": "https://www.amazon.com.br/Console-New-Nintendo-Switch-Vermelho/dp/B08M9S4XTR/ref=sr_1_1?keywords=nintendo+switch&qid=1651950794&sprefix=nint%2Caps%2C208&sr=8-1&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147",
+      "imageUrl": "https://m.media-amazon.com/images/I/61rLszWPavL._AC_SX679_.jpg",
+      "price": 2439.9,
+      "id": 8
+    },
+    {
+      "title": "Mouse Pad Desk Pad Max em Couro Ecologico 90x40cm - WORKPAD (Caramelo)",
+      "url": "https://www.amazon.com.br/Mouse-Desk-Couro-Ecologico-90x40cm/dp/B08NF9Z24Z/?_encoding=UTF8&pd_rd_w=mM7ts&pf_rd_p=717e1082-1b26-481d-94d5-2a1a46904215&pf_rd_r=GHBFAT3CSS9SP8GG9XW5&pd_rd_r=262327db-5291-4873-8291-86724b03fdb7&pd_rd_wg=LFtLa&ref_=pd_gw_ci_mcx_mr_hp_atf_m&th=1",
+      "imageUrl": "https://m.media-amazon.com/images/I/4140yn-0-eS._AC_SX425_.jpg",
+      "price": 48.89,
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "comment": "TELA HD",
+      "promotionId": 1,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "comment": "de R$ 599,90 \n por R$246,05à vista \n (5% de desconto) \n ou R$ 259,00 em 5x de R$ 51,80 sem juros",
+      "promotionId": 2,
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "comment": "Tênis confortável\n tamanho variado \n de R$199,99 por R$119,99 em 3x sem juros!",
+      "promotionId": 3
+    },
+    {
+      "id": 4,
+      "comment": "de R$1199,99 por R$699,99 em até 5x sem juros",
+      "promotionId": 4
+    }
+  ]
+}
