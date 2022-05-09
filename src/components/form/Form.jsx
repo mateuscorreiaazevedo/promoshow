@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useGet } from "../../hooks/useGet";
 import { useForm } from "../../hooks/useForm";
 import { useSubmit } from "../../hooks/useSubmit";
 import { promotionService } from "../../service/promotions";
@@ -6,17 +7,15 @@ import FormInput from "./input/Input";
 import PromotionSubmit from "./submit/Submit";
 
 export default function PromotionForm({ id }) {
-    const [promotion, setPromotion] = useState();
-    const { values, setValue } = useForm(promotion);
+    const { call, items } = useGet([], promotionService.getById)
+    const { values, setValue } = useForm(items);
     const { handleSubmit } = useSubmit(values);
 
     useEffect(() => {
         if(id) {
-            promotionService.getById({id})
-                .then(res => setPromotion(res.data))
-                .catch(() => console.error("algum problema no getById"))
+            call({id})
         }
-    }, [id])
+    }, [id]);
     
     return (
         <form>
@@ -24,26 +23,26 @@ export default function PromotionForm({ id }) {
                 nameId="title"
                 text="Título"
                 handleChange={setValue}
-                defaultValue={promotion?.title ?? ""}
+                defaultValue={items?.title ?? ""}
             />
             <FormInput 
                 nameId="url"
                 text="Link"
                 handleChange={setValue}
-                defaultValue={promotion?.url ?? ""}
+                defaultValue={items?.url ?? ""}
             />
             <FormInput 
                 nameId="imageUrl"
                 text="Imagem (URL)"
                 handleChange={setValue}
-                defaultValue={promotion?.imageUrl ?? ""}
+                defaultValue={items?.imageUrl ?? ""}
             />
             <FormInput 
                 nameId="price"
                 text="Preço"
                 type="number"
                 handleChange={setValue}
-                defaultValue={promotion?.price ?? ""}
+                defaultValue={items?.price ?? ""}
             />
             <PromotionSubmit 
                 handleSubmit={(e) => handleSubmit(e, id)} 

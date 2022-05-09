@@ -12,14 +12,14 @@ export const useSubmit = (values) => {
                     await promotionService.update({ ...values, id })
                     navigate("/")
                 } catch(err) {
-                    console.error("algo errado no update")
+                    console.error(err.message, "update error")
                 }
             } else {
                 try {
                     await promotionService.save(values)
                     navigate("/")
                 } catch(err) {
-                    console.error("algo errado ao enviar o save")
+                    console.error(err.message, "save error")
                 }
             }
         })()

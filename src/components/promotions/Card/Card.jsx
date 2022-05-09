@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { CardComments, CardFooter, CardImage, CardInfo, CardLinks, CardPrice, CardSection } from "./Style";
 
-export default function PromotionCard({ title, url, imageUrl, id, price, comments }) {
+export default function PromotionCard({ title, url, imageUrl, id, price, comments, screenIsOpen }) {
 
     return (
         <CardSection>
@@ -14,7 +14,7 @@ export default function PromotionCard({ title, url, imageUrl, id, price, comment
                         {comments.length > 0 &&(
                             <p className="comment-content">"{comments[0].comment}"</p>
                         )}
-                        <button type="button" className="comment-btn">
+                        <button type="button" className="comment-btn" onClick={() => screenIsOpen(id)}>
                             {comments.length}
                             {comments.length > 1 ? " Comentários" : " Comentário"}
                         </button>

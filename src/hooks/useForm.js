@@ -21,7 +21,6 @@ export const useForm = (defaultValues = {}) => {
             }
         })
     }
-    console.log(values);
 
     return {
         setValue,

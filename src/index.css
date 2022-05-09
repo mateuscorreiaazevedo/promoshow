@@ -15,3 +15,10 @@ body {
     width: 1040px;
     margin: 0 auto;
 }
+
+.title-promoshow {
+    text-align: center;
+    color: #888;
+    margin: .5em;
+    font-size: 3em;
+}

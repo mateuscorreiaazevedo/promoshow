@@ -12,7 +12,6 @@ export const usePromotions = (search) => {
         params.title_like = search;
     }
 
-    
     useEffect(() => {
         debounced(params)
             .then(response => setPromotions(response.data))
@@ -20,7 +19,6 @@ export const usePromotions = (search) => {
             .finally(() => setLoad(false))
     }, [search])
 
-    
     return {
         promotions,
         load,
