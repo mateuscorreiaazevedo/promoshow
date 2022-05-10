@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-export const debouncePromise = (fn, delayInMs = 300) => {
+export const debouncePromise = (fn, delayInMs = 500) => {
     const timeoutRef = useRef(false);
 
     function debounced(params) {

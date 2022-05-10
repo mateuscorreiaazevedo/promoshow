@@ -5,6 +5,7 @@ export const commentService = {
         api.get("/comments", {
             params: {
                 promotionId,
+                _expand: "user"
             }
         })
     )

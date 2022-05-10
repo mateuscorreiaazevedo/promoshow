@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const useGet = (type, service ) => {
+export const useApi = (type, service ) => {
     const [items, setItems] = useState(type)
 
     async function call(params) {

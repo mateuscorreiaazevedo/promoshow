@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useGet } from "../../hooks/useGet";
+import { useApi } from "../../hooks/useApi";
 import { useForm } from "../../hooks/useForm";
 import { useSubmit } from "../../hooks/useSubmit";
 import { promotionService } from "../../service/promotions";
@@ -7,7 +7,7 @@ import FormInput from "./input/Input";
 import PromotionSubmit from "./submit/Submit";
 
 export default function PromotionForm({ id }) {
-    const { call, items } = useGet([], promotionService.getById)
+    const { call, items } = useApi([], promotionService.getById)
     const { values, setValue } = useForm(items);
     const { handleSubmit } = useSubmit(values);
 
