@@ -9,6 +9,7 @@ export const CardSection = styled.section`
     padding: .5em;
     border-radius: .5em;
     background-color: ${light};
+    height: 12em;
 `
 export const CardImage = styled.img`
     width: 10em;
@@ -40,12 +41,14 @@ export const CardComments = styled.div`
     align-items: flex-start;
     .comment-content {
         max-width: 26em;
+        max-height: 1em;
         font-size: 1.2em;
         font-weight: 100;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         color: ${secundary};
+        margin-bottom: .1em;
     }
     .comment-btn {
         align-self: flex-end;
@@ -65,6 +68,7 @@ export const CardLinks = styled.nav`
     position: relative;
     
     .card-btn {
+        cursor: pointer;
         right: .5em;
         ${Btn}
         &:nth-child(1) {
@@ -72,6 +76,9 @@ export const CardLinks = styled.nav`
         }
         &:nth-child(2) {
             top: 0;
+        }
+        &:nth-child(3) {
+            top: 2.5em;
         }
     }
 `

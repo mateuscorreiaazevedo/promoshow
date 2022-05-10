@@ -95,6 +95,36 @@
       "comment": "de R$1199,99 por R$699,99 em até 5x sem juros",
       "promotionId": 4,
       "userId": 2
+    },
+    {
+      "comment": "notebook com windows 10 home, e mochila protege contra chuvas.",
+      "promotionId": 1,
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "comment": "Excelente computador, consegue bater de frente com os macbooks!",
+      "promotionId": 6,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "comment": "excelente faqueiro, todas as peças possuem uma liga metálica de primeira!",
+      "promotionId": 2,
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "comment": "incrível computador! revolucionou o ramo de notebooks e computadores com arquitetura ARM, um banho em muito intel e AMD por aí",
+      "promotionId": 5,
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "comment": "só um teste",
+      "promotionId": 1,
+      "userId": 1,
+      "id": 9
     }
   ],
   "users": [

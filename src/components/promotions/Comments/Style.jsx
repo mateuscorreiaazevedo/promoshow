@@ -6,7 +6,7 @@ const { dark, light, primary, secundary} = colors;
 
 export const CommentsContainer = styled.div`
     width: 840px;
-    height: 560px;
+    height: 100%;
     position: relative;
 
     .title-comments {
@@ -45,7 +45,9 @@ export const CommentForm = styled.form`
         border: ${border};
         border-color: #aaa;
         padding: 1em;
-
+        :focus {
+            outline-color: #aaa;
+        }
     }
     button {
         ${Btn}

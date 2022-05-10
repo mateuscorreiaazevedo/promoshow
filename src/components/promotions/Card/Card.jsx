@@ -3,6 +3,7 @@ import { CardComments, CardFooter, CardImage, CardInfo, CardLinks, CardPrice, Ca
 
 export default function PromotionCard({ title, url, imageUrl, id, price, comments, screenIsOpen }) {
 
+
     return (
         <CardSection>
             <CardImage src={imageUrl} alt={title} />
@@ -22,6 +23,7 @@ export default function PromotionCard({ title, url, imageUrl, id, price, comment
                     <CardLinks>
                         <a href={url} target="_blank" className="card-btn">Acessar</a>
                         <Link to={`/edit/${id}`} className="card-btn">Editar</Link>
+                        <a type="button" className="card-btn">Deletar</a>
                     </CardLinks>
                 </CardFooter>
             </CardInfo>
