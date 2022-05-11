@@ -11,5 +11,8 @@ export const commentService = {
     ),
     save: ({ comment, promotionId, userId = 1}) => (
         api.post("/comments", {comment, promotionId: Number(parseInt(promotionId)), userId})
+    ),
+    delete: (id) => (
+        api.delete(`/comments/${id}`)
     )
 }

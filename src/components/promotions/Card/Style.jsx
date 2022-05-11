@@ -13,6 +13,7 @@ export const CardSection = styled.section`
 `
 export const CardImage = styled.img`
     width: 10em;
+    height: 10em;
     margin-right: 2em;
 `
 export const CardInfo = styled.div`

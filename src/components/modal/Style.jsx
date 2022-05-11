@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Btn, InputDefault, border, colors } from "../../assets/css/vars";
+import { colors } from "../../assets/css/vars";
 const { dark, light, primary, secundary } = colors;
 
 export const Overlay = styled.div`
@@ -12,6 +12,5 @@ export const Overlay = styled.div`
 `
 export const ScreenContainer = styled.div`
     background-color: ${light};
-    padding: 1em 2em;
     border-radius: 0.5em;
 `

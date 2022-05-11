@@ -43,13 +43,6 @@
       "id": 6
     },
     {
-      "title": "Fone de ouvido sem fio QCY T13 TWS Bluetooth 5.1 com 4 microfones Touch Control IPX5 à prova d'água 30 horas de tempo de reprodução",
-      "url": "https://www.amazon.com.br/T13-Bluetooth-microfones-Control-reprodu%C3%A7%C3%A3o/dp/B09C1K95LB?ref_=Oct_d_obs_d_23469006011&pd_rd_w=NmkkC&pf_rd_p=574d7dde-c8d1-436d-a7fc-f2654a8c3190&pf_rd_r=CB4ZTMFHMZ32V3EHKS9V&pd_rd_r=ddf126d1-e027-4ef4-98b8-dd2cf06069d7&pd_rd_wg=Cnnaq&pd_rd_i=B09C1K95LB&th=1",
-      "imageUrl": "https://m.media-amazon.com/images/I/61RYWZ7sBzL._AC_SX679_.jpg",
-      "price": 129,
-      "id": 7
-    },
-    {
       "title": "Console New Nintendo Switch - Azul Neon e Vermelho Neon (versão nacional)",
       "url": "https://www.amazon.com.br/Console-New-Nintendo-Switch-Vermelho/dp/B08M9S4XTR/?_encoding=UTF8&pd_rd_w=FpYHs&pf_rd_p=717e1082-1b26-481d-94d5-2a1a46904215&pf_rd_r=6T6V4EGN28231PGRS0ZZ&pd_rd_r=85676708-60b3-43b3-866c-2c2288d5d7e6&pd_rd_wg=3SE6A&ref_=pd_gw_ci_mcx_mr_hp_atf_m&th=1",
       "imageUrl": "https://m.media-amazon.com/images/I/61WFABdVnfL._AC_SX679_.jpg",
@@ -57,18 +50,11 @@
       "id": 8
     },
     {
-      "title": "Mouse Pad Desk Pad Max em Couro Ecologico 90x40cm - WORKPAD (Caramelo)",
-      "url": "https://www.amazon.com.br/Mouse-Desk-Couro-Ecologico-90x40cm/dp/B08NF9Z24Z/?_encoding=UTF8&pd_rd_w=mM7ts&pf_rd_p=717e1082-1b26-481d-94d5-2a1a46904215&pf_rd_r=GHBFAT3CSS9SP8GG9XW5&pd_rd_r=262327db-5291-4873-8291-86724b03fdb7&pd_rd_wg=LFtLa&ref_=pd_gw_ci_mcx_mr_hp_atf_m&th=1",
-      "imageUrl": "https://m.media-amazon.com/images/I/4140yn-0-eS._AC_SX425_.jpg",
-      "price": 48.89,
-      "id": 9
-    },
-    {
-      "title": "Leather Mouse Pad Grovemade - Large w/ Pen Tray",
-      "url": "https://grovemade.com/product/leather-mouse-pad/?initial=66",
-      "imageUrl": "https://grovemade.imgix.net/https%3A%2F%2Fgrovemade.com%2Fshop-static%2Fshop%2Fvariant%2Fgrovemade-mouse-pad-leather-walnut-2-galA-A1.jpg%3F_v%3D1637361176.21?auto=format&ixlib=python-1.1.2&w=700&s=23c916e420f2298c86985f98ca49f20a",
-      "price": 609.83,
-      "id": 10
+      "title": "Fone de ouvido sem fio QCY T13 TWS Bluetooth 5.1 com 4 microfones Touch Control IPX5 à prova d'água 40 horas de tempo de reprodução",
+      "url": "https://www.amazon.com.br/T13-Bluetooth-microfones-Control-reprodu%C3%A7%C3%A3o/dp/B09C1K95LB?ref_=Oct_d_obs_d_23469006011&pd_rd_w=SEBvt&pf_rd_p=574d7dde-c8d1-436d-a7fc-f2654a8c3190&pf_rd_r=GZ61JSKMDCSVY3DG6E5D&pd_rd_r=67f6c2fb-96d8-404d-b0fa-6bf3aaf210dd&pd_rd_wg=tcIbO&pd_rd_i=B09C1K95LB&th=1",
+      "imageUrl": "https://m.media-amazon.com/images/I/61RYWZ7sBzL._AC_SX569_.jpg",
+      "price": 129,
+      "id": 11
     }
   ],
   "comments": [
@@ -77,12 +63,6 @@
       "comment": "TELA HD",
       "promotionId": 1,
       "userId": 1
-    },
-    {
-      "id": 2,
-      "comment": "de R$ 599,90 \n por R$246,05à vista \n (5% de desconto) \n ou R$ 259,00 em 5x de R$ 51,80 sem juros",
-      "promotionId": 2,
-      "userId": 2
     },
     {
       "id": 3,
@@ -97,34 +77,22 @@
       "userId": 2
     },
     {
-      "comment": "notebook com windows 10 home, e mochila protege contra chuvas.",
-      "promotionId": 1,
-      "userId": 1,
-      "id": 5
-    },
-    {
-      "comment": "Excelente computador, consegue bater de frente com os macbooks!",
-      "promotionId": 6,
-      "userId": 1,
-      "id": 6
-    },
-    {
-      "comment": "excelente faqueiro, todas as peças possuem uma liga metálica de primeira!",
-      "promotionId": 2,
-      "userId": 1,
-      "id": 7
-    },
-    {
       "comment": "incrível computador! revolucionou o ramo de notebooks e computadores com arquitetura ARM, um banho em muito intel e AMD por aí",
       "promotionId": 5,
       "userId": 1,
       "id": 8
     },
     {
-      "comment": "só um teste",
-      "promotionId": 1,
+      "comment": "teste",
+      "promotionId": 2,
       "userId": 1,
-      "id": 9
+      "id": 10
+    },
+    {
+      "comment": "testesss",
+      "promotionId": 11,
+      "userId": 1,
+      "id": 11
     }
   ],
   "users": [

@@ -1,24 +1,33 @@
 import { ListComments } from "./Style"
-import { VscKebabVertical } from "react-icons/vsc";
+import { commentService } from "../../../../service/comments";
+import { useEffect, useState } from "react";
+import ElipsesTree from "./Elipses";
 
-export default function CommentsTree({ comments, closeModal }) {
-    if(!comments) {
+export default function CommentsTree({ id, user, comment, callback }) {
+    const [deleteComment, setDeleteComment] = useState(null);
+        
+    useEffect(() => {
+        if(deleteComment) {
+            commentService.delete(deleteComment)
+            .then(() => callback())
+            .catch(() => console.error("deu ruim ao deletar comentário"))
+        }
+    }, [deleteComment])
+
+    if(!comment) {
         return <p>Carregando...</p>
     }
+    
     return (
         <ListComments>
-            {!!comments.length ? comments.map(item => (
-                <li key={item.id}>
-                    <img src={item.user.avatarUrl} alt={item.user.name} />
+                <li>
+                    <img src={user.avatarUrl} alt={user.name} />
                     <div className="user-container">
-                        <h3>{item.user.name}</h3>
-                        <p>{item.comment}</p>
+                        <h3>{user.name}</h3>
+                        <p>{comment}</p>
                     </div>
-                        <section className="elipes-btn" onClick={closeModal}>
-                            <VscKebabVertical />
-                        </section>
+                    <ElipsesTree deleteComment={() => setDeleteComment(id)} />
                 </li>
-            )) : <p className="message-comments">Nenhum comentário listado para esta promoção</p>}
         </ListComments>
     )
 }

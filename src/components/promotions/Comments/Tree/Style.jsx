@@ -4,22 +4,23 @@ import { border, colors } from "../../../../assets/css/vars";
 const { dark, light, primary, secundary } = colors;
 
 export const ListComments = styled.ul`
+    margin-top: 1em;
     list-style: none;
-    padding: 1em;
+    padding: .1em 0;
     border-radius: .5em;
     background-color: #fff;
     li {
-        border: ${border};
-        padding: .5em;
+        background-color: #f8f9fa;
+        padding: .8em;
         border-radius: .5em;
-        margin: 2em 0;
         display: flex;
         gap: .5em;
         img {
         box-shadow: 0 0 9px ${primary};
-        width: 4.5em;
-        height: 4.5em;
+        width: 4em;
+        height: 4em;
         border-radius: 50%;
+        margin-right: 1em;
         }
         .user-container {
             display: flex;
@@ -28,14 +29,28 @@ export const ListComments = styled.ul`
             margin: .1em 0;
             flex-grow: 1;
         }
-        .elipes-btn {
-            color: ${secundary};
+    }
+`
+
+export const Elipses = styled.nav`
+    ul {
+        transition: all 600ms ease;
+        position: absolute;
+        display: none;
+        background-color: transparent;
+        right: 1em;
+        top: 12.3em;
+        padding: 0;
+        margin: 0;
+        .btn {
+            cursor: pointer;
             border: none;
-            background: unset;
-            margin: 0;
+            background-color: unset;
         }
     }
-    .message-comments {
-        color: ${secundary};
+    &:hover {
+        ul{
+            display: block;
+        }
     }
 `
