@@ -3,37 +3,7 @@ import { border, colors } from "../../../../assets/css/vars";
 
 const { dark, light, primary, secundary } = colors;
 
-export const ListComments = styled.ul`
-    margin-top: 1em;
-    border: none;
-    list-style: none;
-    padding: .1em 0;
-    border-radius: .5em;
-    background-color: #f8f9fa;
-    position: relative;
-    li {
-        padding: .8em .8em 0;
-        border-radius: .5em;
-        display: flex;
-        gap: .5em;
-        img {
-            width: 4em;
-            height: 4em;
-            border-radius: 50%;
-            margin-right: 1em;
-        }
-        .user-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            margin: 0;
-            flex-grow: 1;
-            padding: 0;
-        }
-    }
-    .answer-box {
-        margin-bottom: .5em;
-        margin-left: 10em;
+export const ListComments = styled.div`
 `
 export const AnswerButton = styled.button`
     cursor: pointer;
@@ -45,41 +15,52 @@ export const AnswerButton = styled.button`
     align-self: flex-start;
     margin-top: .2em;
     transition: all 300ms ease;
+    input {
+        display: none;
+    }
     &:hover {
         color: #0477be;
     }
 `
 export const Elipses = styled.nav`
+    position: absolute;
+    right: 2em;
+    z-index: 999;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-bottom: .0625em;
     .options-btn {
+        margin: .1em .5em ;
         border: ${border};
-        border-color: #aaa;
-        padding: .2em;
+        border-color: ${secundary};
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: .3em;
         border-radius: .2em;
     }
     .btn {
         cursor: pointer;
         border: none;
         background-color: unset;
+
     }
 `
-
 export const CommentBox = styled.div`
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    padding: 0 1em;
     margin-top: .8em;
     textarea {
         border-radius: .5em;
+        margin-bottom: .5em;
         border-color: ${secundary};
-        padding: .0625em .5em;
+        padding: .5em .5em 0;
         &:focus {
             outline: ${border};
         }
     }
     .send-btn {
+        align-self: flex-end;
         cursor: pointer;
         border-radius: .25em;
         background-color: unset;

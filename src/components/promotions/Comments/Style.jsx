@@ -9,7 +9,7 @@ export const CommentsContainer = styled.div`
     height: 540px;
     position: relative;
     overflow-y: auto;
-    padding: 0 1em;
+    padding: .5em 1.5em;
     .title-comments {
         margin-bottom: 1em;
         font-weight: bold;
@@ -58,5 +58,35 @@ export const CommentForm = styled.form`
         position: inherit;
         text-align: center;
         background-color: unset;
+    }
+`
+export const CommentSection =styled.ul`
+    list-style: none;
+    li.comment-box {
+        background-color: #efefef;
+        border-radius: .5em;
+        padding: 1em 2em;
+        margin: 1em 0;
+
+        .comment-content {
+            display: flex;
+            gap: 1em;
+            .image-user {
+                width: 4em;
+                height: 4em;
+                border-radius: 50%;
+            }
+            .user-container {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                gap: .1em;
+                
+            }
+        }
+    }
+    ol.comment-box {
+        padding-left: 5em;
+        margin-top: 1em;
     }
 `

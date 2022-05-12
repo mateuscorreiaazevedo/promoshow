@@ -36,25 +36,11 @@
       "id": 5
     },
     {
-      "title": "Notebook Ultrafino Dell XPS-9300-A10S",
-      "url": "https://www.amazon.com.br/Notebook-Ultraport%C3%A1til-Dell-9300-A10S-gera%C3%A7%C3%A3o/dp/B08DKK93FF/?_encoding=UTF8&pd_rd_w=Lr2mF&pf_rd_p=717e1082-1b26-481d-94d5-2a1a46904215&pf_rd_r=SJNGRVC1PXRYKNRHH67A&pd_rd_r=2ee62cd6-6744-496e-a2b8-e5644b6b9da9&pd_rd_wg=5c11f&ref_=pd_gw_ci_mcx_mr_hp_atf_m",
-      "imageUrl": "https://m.media-amazon.com/images/I/61kFDMnnXCL._AC_SX522_.jpg",
-      "price": 8399,
-      "id": 6
-    },
-    {
       "title": "Console New Nintendo Switch - Azul Neon e Vermelho Neon (versão nacional)",
       "url": "https://www.amazon.com.br/Console-New-Nintendo-Switch-Vermelho/dp/B08M9S4XTR/?_encoding=UTF8&pd_rd_w=FpYHs&pf_rd_p=717e1082-1b26-481d-94d5-2a1a46904215&pf_rd_r=6T6V4EGN28231PGRS0ZZ&pd_rd_r=85676708-60b3-43b3-866c-2c2288d5d7e6&pd_rd_wg=3SE6A&ref_=pd_gw_ci_mcx_mr_hp_atf_m&th=1",
       "imageUrl": "https://m.media-amazon.com/images/I/51NKjoCZWZL._AC_SX679_.jpg",
       "price": 2420.01,
       "id": 8
-    },
-    {
-      "title": "Fone de ouvido sem fio QCY T13 TWS Bluetooth 5.1 com 4 microfones Touch Control IPX5 à prova d'água 40 horas de tempo de reprodução",
-      "url": "https://www.amazon.com.br/T13-Bluetooth-microfones-Control-reprodu%C3%A7%C3%A3o/dp/B09C1K95LB?ref_=Oct_d_obs_d_23469006011&pd_rd_w=SEBvt&pf_rd_p=574d7dde-c8d1-436d-a7fc-f2654a8c3190&pf_rd_r=GZ61JSKMDCSVY3DG6E5D&pd_rd_r=67f6c2fb-96d8-404d-b0fa-6bf3aaf210dd&pd_rd_wg=tcIbO&pd_rd_i=B09C1K95LB&th=1",
-      "imageUrl": "https://m.media-amazon.com/images/I/61RYWZ7sBzL._AC_SX569_.jpg",
-      "price": 129,
-      "id": 11
     }
   ],
   "comments": [
@@ -89,16 +75,11 @@
       "id": 10
     },
     {
-      "comment": "Fone incrível! Excelente construção e qualidade de som, ótimo custo benefício!!! ",
-      "promotionId": 11,
+      "comment": "testeeee",
+      "promotionId": 8,
       "userId": 1,
-      "id": 11
-    },
-    {
-      "comment": "excelente fone, muito bonito também na cor branca",
-      "promotionId": 11,
-      "userId": 1,
-      "id": 12
+      "parentId": null,
+      "id": 18
     }
   ],
   "users": [

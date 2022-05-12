@@ -54,9 +54,11 @@ export default function PromotionComments({ promotionId, closeModal }) {
                         Enviar
                     </button>
                 </CommentForm>
-                {!!items.length ? items.map((item) => (
-                    <CommentsTree {...item} key={item.id} callback={() => call(promotionId)} />
-                )) : <p className="message-comments">Nenhum comentário listado para esta promoção</p>}
+                    <CommentsTree 
+                        items={items} 
+                        callback={() => call(promotionId)}
+                        promotionId={promotionId}
+                    />
             </CommentsContainer>
        </ScreenModal>
     )

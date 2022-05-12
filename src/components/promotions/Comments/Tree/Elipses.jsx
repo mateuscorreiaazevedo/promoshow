@@ -1,19 +1,24 @@
 import { useState } from "react"
 import { BsThreeDotsVertical } from "react-icons/bs"
 import { Elipses } from "./Style"
+import { commentService } from "../../../../service/comments";
 
 
-export default function ElipsesTree({ deleteComment }) {
+export default function ElipsesTree({ id, callback }) {
     const [options, setOptions] = useState(false)
 
-    console.log(options)
+    function handleDelete() {
+        commentService.delete(id)
+        .then(() => callback())
+        .catch(err => console.error(err.message))
+    }
 
     return (
-        <Elipses onClick={() => setOptions(!options)}>
+        <Elipses onClick={() => setOptions(!options)} alt="more options">
             <BsThreeDotsVertical className="dot" />
                 {!!options &&(
                     <div className="options-btn">
-                        <button onClick={deleteComment} className="btn">
+                        <button onClick={handleDelete} className="btn">
                             Deletar
                         </button>
                     </div>

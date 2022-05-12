@@ -9,8 +9,13 @@ export const commentService = {
             }
         })
     ),
-    save: ({ comment, promotionId, userId = 1}) => (
-        api.post("/comments", {comment, promotionId: Number(parseInt(promotionId)), userId})
+    save: ({ comment, promotionId, userId = 1, parentId = null }) => (
+        api.post("/comments", {
+            comment, 
+            promotionId: Number(promotionId),
+            userId,
+            parentId: parentId ? Number(parentId) : null
+        })
     ),
     delete: (id) => (
         api.delete(`/comments/${id}`)

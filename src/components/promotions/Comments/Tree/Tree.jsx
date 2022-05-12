@@ -1,33 +1,33 @@
-import { ListComments } from "./Style"
-import { commentService } from "../../../../service/comments";
-import { useEffect, useState } from "react";
-import ElipsesTree from "./Elipses";
+import { useState } from "react";
+import { CommentItem } from "../Comment-item";
 
-export default function CommentsTree({ id, user, comment, callback }) {
-    const [deleteComment, setDeleteComment] = useState(null);
-        
-    useEffect(() => {
-        if(deleteComment) {
-            commentService.delete(deleteComment)
-            .then(() => callback())
-            .catch(() => console.error("deu ruim ao deletar comentário"))
-        }
-    }, [deleteComment])
-
-    if(!comment) {
+export default function CommentsTree({ callback, items, promotionId }) {
+    const currentComment = useState();
+    const comments = items.filter(item => !item.parentId).map(comment => ({
+            ...comment,
+            childrens: items.filter(item => item.parentId === comment.id)
+        })
+    );
+    
+    if(!items) {
         return <p>Carregando...</p>
-    }
+    };
     
     return (
-        <ListComments>
-                <li>
-                    <img src={user.avatarUrl} alt={user.name} />
-                    <div className="user-container">
-                        <h3>{user.name}</h3>
-                        <p>{comment}</p>
-                    </div>
-                    <ElipsesTree deleteComment={() => setDeleteComment(id)} />
-                </li>
-        </ListComments>
-    )
+        <div>
+            {!!comments.length ? comments.map(item => (
+                <CommentItem 
+                    currentComment={currentComment} 
+                    key={item.id}
+                    callback={callback} 
+                    promotionId={promotionId}
+                    {...item} 
+                />
+            )) : 
+                <p className="message-comments">
+                    Nenhum comentário listado para esta promoção
+                </p>
+            }
+        </div>
+    );
 }
