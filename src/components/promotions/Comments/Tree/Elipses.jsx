@@ -1,19 +1,23 @@
-import { HiOutlineMenuAlt4 } from "react-icons/hi"
+import { useState } from "react"
+import { BsThreeDotsVertical } from "react-icons/bs"
 import { Elipses } from "./Style"
 
 
 export default function ElipsesTree({ deleteComment }) {
+    const [options, setOptions] = useState(false)
+
+    console.log(options)
 
     return (
-        <Elipses>
-            <HiOutlineMenuAlt4 />
-            <ul>
-                <li>
-                    <button onClick={deleteComment} className="btn">
-                        Deletar
-                    </button>
-                </li>
-            </ul>
+        <Elipses onClick={() => setOptions(!options)}>
+            <BsThreeDotsVertical className="dot" />
+                {!!options &&(
+                    <div className="options-btn">
+                        <button onClick={deleteComment} className="btn">
+                            Deletar
+                        </button>
+                    </div>
+                )}
         </Elipses>
     )
 }
