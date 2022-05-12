@@ -6,9 +6,10 @@ const { dark, light, primary, secundary} = colors;
 
 export const CommentsContainer = styled.div`
     width: 840px;
-    height: 560px;
+    height: 540px;
     position: relative;
-
+    overflow-y: auto;
+    padding: 0 1em;
     .title-comments {
         margin-bottom: 1em;
         font-weight: bold;
@@ -18,8 +19,8 @@ export const CommentsContainer = styled.div`
     .close-btn {
         cursor: pointer;
         position: absolute;
-        top: 0;
-        right: -.5em;
+        top: .5em;
+        right: 1em;
         font-size: 1.5em;
         border: unset;
         background: unset;
@@ -33,11 +34,14 @@ export const CommentsContainer = styled.div`
     .comments {
         font-weight: bold;
     }
+    .message-comments {
+        color: ${secundary};
+    }
 `
 export const CommentForm = styled.form`
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: .1em;
     align-items: flex-end;
     textarea {
         width: 100%;
@@ -45,7 +49,9 @@ export const CommentForm = styled.form`
         border: ${border};
         border-color: #aaa;
         padding: 1em;
-
+        :focus {
+            outline-color: #aaa;
+        }
     }
     button {
         ${Btn}

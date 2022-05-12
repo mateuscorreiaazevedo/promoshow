@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { CardComments, CardFooter, CardImage, CardInfo, CardLinks, CardPrice, CardSection } from "./Style";
 
-export default function PromotionCard({ title, url, imageUrl, id, price, comments, screenIsOpen }) {
+export default function PromotionCard({ title, url, imageUrl, id, price, comments, screenIsOpen, deletePromotion }) {
+
 
     return (
         <CardSection>
@@ -22,6 +23,7 @@ export default function PromotionCard({ title, url, imageUrl, id, price, comment
                     <CardLinks>
                         <a href={url} target="_blank" className="card-btn">Acessar</a>
                         <Link to={`/edit/${id}`} className="card-btn">Editar</Link>
+                        <div type="button" className="card-btn" onClick={() => deletePromotion(id)}>Deletar</div>
                     </CardLinks>
                 </CardFooter>
             </CardInfo>
