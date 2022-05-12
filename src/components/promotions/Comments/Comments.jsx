@@ -3,9 +3,8 @@ import { IoIosCloseCircle } from "react-icons/io";
 import CommentsTree from "./Tree/Tree";
 import ScreenModal from "../../modal/Modal";
 import { commentService } from "../../../service/comments";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useApi } from "../../../hooks/useApi";
-import { useRef } from "react";
 
 export default function PromotionComments({ promotionId, closeModal }) {
     const { call, items } = useApi([], commentService.getAll);
@@ -26,15 +25,12 @@ export default function PromotionComments({ promotionId, closeModal }) {
         commentService
             .save({promotionId, comment})
             .then(() => {
-                console.log(commentRef.current.value)
                 commentRef.current.value = ""
-                setComment("")
                 call(promotionId)
             })
             .catch(err => console.error(err.message))
     }
 
-    
     function closeComments() {
         closeModal(null)
     }
@@ -51,7 +47,6 @@ export default function PromotionComments({ promotionId, closeModal }) {
                         placeholder="Comentar..." 
                         className="comment-box" 
                         onChange={onChangeComment}
-                        name="comment"
                         ref={commentRef}
                     />
                     <button type="submit" onClick={sendComment}>

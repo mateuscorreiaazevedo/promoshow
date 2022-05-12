@@ -33,13 +33,14 @@ export const ListComments = styled.ul`
 `
 
 export const Elipses = styled.nav`
+    position: relative;
     ul {
         transition: all 600ms ease;
         position: absolute;
         display: none;
         background-color: transparent;
-        right: 1em;
-        top: 12.3em;
+        right: -.8em;
+        top: .8em;
         padding: 0;
         margin: 0;
         .btn {
