@@ -32,6 +32,7 @@ export default function PromotionComments({ promotionId, closeModal }) {
     }
 
     function closeComments() {
+        window.location.reload()
         closeModal(null)
     }
 

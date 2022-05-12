@@ -9,12 +9,13 @@ export const CardSection = styled.section`
     padding: .5em;
     border-radius: .5em;
     background-color: ${light};
+    align-items: center;
     height: 12em;
 `
 export const CardImage = styled.img`
-    width: 10em;
-    height: 10em;
     margin-right: 2em;
+    width: 12em;
+    height: 9em;
 `
 export const CardInfo = styled.div`
     display: flex;

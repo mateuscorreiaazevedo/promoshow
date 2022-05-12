@@ -1,11 +1,11 @@
 {
   "promotions": [
     {
-      "id": 1,
       "title": "Kit Notebook Acer Aspire 3 + Mochila Green, A315-41-R790, AMD Ryzen 3 2200U Dual Core",
-      "price": 1799.99,
       "url": "",
-      "imageUrl": "https://m.media-amazon.com/images/I/61o0lt6Sh6L._AC_SX679_.jpg"
+      "imageUrl": "https://m.media-amazon.com/images/I/61o0lt6Sh6L._AC_SX679_.jpg",
+      "price": 1799.99,
+      "id": 1
     },
     {
       "id": 2,
@@ -45,7 +45,7 @@
     {
       "title": "Console New Nintendo Switch - Azul Neon e Vermelho Neon (versão nacional)",
       "url": "https://www.amazon.com.br/Console-New-Nintendo-Switch-Vermelho/dp/B08M9S4XTR/?_encoding=UTF8&pd_rd_w=FpYHs&pf_rd_p=717e1082-1b26-481d-94d5-2a1a46904215&pf_rd_r=6T6V4EGN28231PGRS0ZZ&pd_rd_r=85676708-60b3-43b3-866c-2c2288d5d7e6&pd_rd_wg=3SE6A&ref_=pd_gw_ci_mcx_mr_hp_atf_m&th=1",
-      "imageUrl": "https://m.media-amazon.com/images/I/61WFABdVnfL._AC_SX679_.jpg",
+      "imageUrl": "https://m.media-amazon.com/images/I/51NKjoCZWZL._AC_SX679_.jpg",
       "price": 2420.01,
       "id": 8
     },
@@ -93,6 +93,12 @@
       "promotionId": 11,
       "userId": 1,
       "id": 11
+    },
+    {
+      "comment": "excelente fone, muito bonito também na cor branca",
+      "promotionId": 11,
+      "userId": 1,
+      "id": 12
     }
   ],
   "users": [
